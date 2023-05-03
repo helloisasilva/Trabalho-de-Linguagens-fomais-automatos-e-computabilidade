@@ -21,9 +21,13 @@ def regex_2_a(cadeia:str)-> bool:
         Valor booleano, validando se a cadeia do parâmetro 
         faz parte da linguagem estabelecida.
     """
-  padrao_regex= r'^(HM)|(MH)(mm+|h+|hhm+)(h|m)*$'
-  validacao= re.search(padrao_regex,cadeia)
-  return validacao
+  regex_A = re.search(r'^(HM)|(MH)(mm+|h+|hhm+)(h|m)*$', cadeia)
+  if regex_A == None:
+    return False
+  elif regex_A.group() == cadeia:
+    return True
+  else:
+    return False
 
 
 def regex_2_b(cadeia:str)-> bool:
@@ -44,9 +48,13 @@ def regex_2_b(cadeia:str)-> bool:
         Valor booleano, validando se a cadeia do parâmetro 
         faz parte da linguagem estabelecida.
     """
-  padrao_regex= r'([M][H]|[H][M])h*mh*(h*mh*mh*)*'
-  validacao= re.search(padrao_regex,cadeia)
-  return validacao
+  m = re.search(r'([M][H]|[H][M])h*mh*(h*mh*mh*)*', cadeia)
+  if m == None:
+    return False
+  elif m.group() == cadeia:
+    return True
+  else:
+    return False
 
 
 def regex_2_c(cadeia: str) -> bool:
@@ -123,9 +131,13 @@ def regex_2_f(cadeia:str)->bool:
     Return:
         Valor booleano, validando se a cadeia do parâmetro faz parte da linguagem estabelecida
     """
-  padrao_regex = r'([M][M]|[H][H])([h]?(([m]|[h][m])([h]|[m])*)?)'
-  validacao= re.search(padrao_regex,cadeia)
-  return validacao
+  m = re.search(r'([M][M]|[H][H])([h]?(([m]|[h][m])([h]|[m])*)?$)', cadeia)
+  if m == None:
+    return False
+  elif m.group() == cadeia:
+    return True
+  else:
+    return False
 
 
 # deve precisar de alteração, nao definitivo.
