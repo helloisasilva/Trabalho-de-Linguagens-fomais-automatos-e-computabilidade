@@ -72,7 +72,10 @@ def test_letra_b_7(): # teste para ser invalidado
     teste= 'HMmmmm'
     assert questao_2.regex_2_b(teste)
 
-# adicionar mais testes q da erro, depois de ajeitarem o regex
+def test_letra_b_8(): # teste para ser invalidado 
+    teste= 'HMhmhmhmhmhmm'
+    assert questao_2.regex_2_b(teste)
+
 
 # ** TESTE LETRA C ** 
 
@@ -210,7 +213,7 @@ def test_letra_f_6(): # teste para ser invalidado
     teste= 'HMmh'
     assert questao_2.regex_2_f(teste)
 
-def test_letra_f_7(): # teste para ser invalidado #dar uma olhada no regex, ta errado
+def test_letra_f_7(): # teste para ser invalidado 
     teste= 'MMhhmmhh'
     assert questao_2.regex_2_f(teste)
 

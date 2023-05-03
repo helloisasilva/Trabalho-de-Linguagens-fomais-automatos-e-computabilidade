@@ -164,6 +164,14 @@ def teste_valida_data_hora_5(): # teste para ser invalidado
     teste= '99/99/999903:09:09'
     assert questao_1.valida_data_horario(teste)
 
+def teste_valida_data_hora_6(): # teste para ser invalidado
+    teste= 'a9/99/9999 03:09:09'
+    assert questao_1.valida_data_horario(teste)
+
+def teste_valida_data_hora_7(): # teste para ser invalidado
+    teste= 'a9/99/9999 0a:09:09'
+    assert questao_1.valida_data_horario(teste)
+
 # ** TESTE NUMERO_REAL ** 
 
 def teste_valida_num_real_1():

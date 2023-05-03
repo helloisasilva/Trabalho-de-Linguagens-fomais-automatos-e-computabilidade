@@ -103,7 +103,7 @@ def valida_data_horario(cadeia: str) -> bool:
     Validação de data e hora, em que as sentenças devem ter o formato dd/mm/aaaa hh:mm:ss, onde d, m, a, h, m, s ∈ N.
 
     Arguments: 
-      Cadeia de stringl.
+      Cadeia de strings.
     Return: 
       Valor booleano, validando se a cadeia colocada no parâmentro faz parte do regex
       estabelecido.

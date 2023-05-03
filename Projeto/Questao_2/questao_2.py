@@ -131,13 +131,13 @@ def regex_2_f(cadeia:str)->bool:
     Return:
         Valor booleano, validando se a cadeia do parâmetro faz parte da linguagem estabelecida
     """
-  m = re.search(r'([M][M]|[H][H])([h]?(([m]|[h][m])([h]|[m])*)?$)', cadeia)
+  m = re.search(r"^((MM|HH)((m|hm)([h|m])*)?)$|^(MMh|HHh)$", cadeia)
   if m == None:
     return False
   elif m.group() == cadeia:
-    return True
+     return True
   else:
-    return False
+        return False  
 
 
 # deve precisar de alteração, nao definitivo.
