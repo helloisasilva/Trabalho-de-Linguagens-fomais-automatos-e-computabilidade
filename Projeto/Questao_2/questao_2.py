@@ -140,7 +140,7 @@ def regex_2_f(cadeia:str)->bool:
         return False  
 
 
-# deve precisar de alteração, nao definitivo.
+
 def regex_2_g(x: int, y: int, cadeia_filho: str) :
   """
     Arranjo de no mínimo x∈ℕ e no máximo y ∈ℕ , com x> 0 , y > 0 , e x≤ y , de
