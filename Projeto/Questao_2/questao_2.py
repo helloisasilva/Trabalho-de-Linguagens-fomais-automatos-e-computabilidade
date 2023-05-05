@@ -161,7 +161,7 @@ def regex_2_g(x: int, y: int, cadeia_filho: str) :
         verificacao = re.search(padrao, arranjos)
         print(f'{arranjos} -> Cadeia validada') if verificacao else print(
           f'{arranjos} -> Cadeia não validada.')
-        return verificacao
+    return verificacao
   else:
     return False
 

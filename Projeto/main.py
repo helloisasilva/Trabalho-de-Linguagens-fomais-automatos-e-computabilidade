@@ -259,7 +259,6 @@ while (escolher_questao != 3):
                     homens e mulheres, mas que os três filhos mais novos não foram homens.
                 
                     ''')
-                cadeia = input('Insira a cadeia para ser testada: ')
                 x= int(input("Insira a quantidade mínima para o arranjo de adultos: "))
                 y= int(input("Insira a quantidade máxima para o arranjo de adultos: "))
                 cadeia = input ('Insira a cadeia de filhos para ser testada: ')
