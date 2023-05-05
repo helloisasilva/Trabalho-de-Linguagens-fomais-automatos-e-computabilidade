@@ -66,7 +66,7 @@ def valida_cpf(cadeia: str) -> bool:
     Args: 
       Cadeia de string.
     Return: 
-      Valor booleano, verificando se a cadeia passada no parâmetro da função faz parte             da linguagem.
+      Valor booleano, verificando se a cadeia passada no parâmetro da função respeita o padrao predeterminado.
     """
   cpf_regex = re.compile(r'^((\d){3}\.){2}(\d){3}\-(\d){2}$', flags=re.M)
   match = cpf_regex.search(cadeia)

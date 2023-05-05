@@ -21,14 +21,9 @@ def regex_2_a(cadeia:str)-> bool:
         Valor booleano, validando se a cadeia do parâmetro 
         faz parte da linguagem estabelecida.
     """
-  regex_A = re.search(r'^(HM)|(MH)(mm+|h+|hhm+)(h|m)*$', cadeia)
-  if regex_A == None:
-    return False
-  elif regex_A.group() == cadeia:
-    return True
-  else:
-    return False
-
+  regex_A = re.compile(r'^(HM|MH)(mm+|h+|hhm+)(h|m)*$')
+  match = regex_A.search(cadeia)
+  return bool(match)
 
 def regex_2_b(cadeia:str)-> bool:
   """
@@ -108,10 +103,9 @@ def regex_2_e(cadeia:str)-> bool:
         Valor booleano, validando se a cadeia do parâmetro 
         faz parte da linguagem estabelecida.
     """
-  padrao_regex= r'(HH|MM)((hm)*h?|(mh)*m?)$'
-  validacao= re.search(padrao_regex,cadeia)
-  return validacao
-
+  regex_E = re.compile(r'^(HH|MM)((hm)*h?|(mh)*m?)$')
+  validacao_e = regex_E.search(cadeia)
+  return bool(validacao_e)
 
 def regex_2_f(cadeia:str)->bool:
   """
